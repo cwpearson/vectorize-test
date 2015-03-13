@@ -2,8 +2,8 @@ CC = clang -g
 CFLAGS = -g -O2
 libs=-lm
 
-flags = -O3 -Wall -Wextra -Weffc++ 
-vecflags = -Rpass=loop-vectorize
+flags = -O3 -Wall -Wextra -Weffc++ -ffast-math 
+vecflags =
 novecflags = -fno-vectorize
 
 all : runvec runnovec
